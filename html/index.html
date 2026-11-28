@@ -8,35 +8,38 @@
   </head>
   <body>
     <section>
-    <form class="formulaire">
-      <div class="form-group">
-        <label for="name">nom complet</label>
-        <input type="text" id="name" placeholder="nom complet" />
-      </div>
-      <div class="form-group">
-        <label for="firstnumber">premier nombre</label>
-        <input type="number" id="firstnumber" />
-      </div>
-      <div class="form-group">
-        <label for="secondnumber">second nombre</label>
-        <input type="number" id="secondnumber" />
-      </div>
-      <div class="form-group">
-        <label for="operations">operations</label>
-        <select name="operations" id="operations">
-          <option value="" selected disabled>choisir une opération</option>
-          <option value="+">addition</option>
-          <option value="-">soustraction</option>
-          <option value="*">multiplication</option>
-          <option value="/">division</option>
-          <option value="%">modulo</option>
-        </select>
-      </div>
-      <button type="button" id="btncalculer">calculer</button>
-      <p id="resultat">resultat</p>
-    </form>
+      <form class="formulaire">
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" placeholder="Nom complet" />
+        </div>
+        <div class="form-group">
+          <label for="firstnumber">Premier nombre</label>
+          <input type="number" id="firstnumber" />
+        </div>
+        <div class="form-group">
+          <label for="secondnumber">Second nombre</label>
+          <input type="number" id="secondnumber" />
+        </div>
+        <div class="form-group">
+          <label for="operations">Operations</label>
+          <select name="operations" id="operations">
+            <option value="" selected disabled>choisir une opération</option>
+            <option value="+">addition</option>
+            <option value="-">soustraction</option>
+            <option value="*">multiplication</option>
+            <option value="/">division</option>
+            <option value="%">modulo</option>
+          </select>
+          </div>
+        <button type="button" id="btncalculer">calculer</button>
+          <div class="resultat-box">
+        <div id="initial" class="cercle"></div>
+        <p id="resultat">Resultat</p>
+        </div>
+      </form>
 
-    <script src="scripts/operations.js"></script>
+      <script src="scripts/operations.js"></script>
     </section>
   </body>
 </html>

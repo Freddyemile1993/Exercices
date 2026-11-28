@@ -26,6 +26,10 @@ function calculer() {
     resultElement.textContent = "La division par 0 est impossible";
     return;
   }
+  if (valueName.trim().split(" ").length < 2) {
+    resultElement.textContent = "Entrez votre prénom et nom s'il vous plait";
+    return;
+  }
 
   // code pour une multitude de possibilite de calcul
   let result = 0;
@@ -36,7 +40,9 @@ function calculer() {
   else if (valueOfOperations === "%") result = firstValue % secondValue;
 
   // code pour afficher le resultat de calcul
-  resultElement.textContent = "le résultat est, " + result;
+  resultElement.textContent = "le résultat est " + result;
+
+
 }
 // Code pour surveiller l'action de l'utilisateur
 const btncalculer = document.getElementById("btncalculer");
