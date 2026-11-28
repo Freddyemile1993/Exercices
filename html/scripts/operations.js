@@ -42,7 +42,9 @@ function calculer() {
   // code pour afficher le resultat de calcul
   resultElement.textContent = "le résultat est " + result;
 
-
+    // la concatenation des chaines de caracteres
+  const nameAndResultat = `${valueName} ${result}`;
+  resultElement.textContent = nameAndResultat;
 }
 // Code pour surveiller l'action de l'utilisateur
 const btncalculer = document.getElementById("btncalculer");
