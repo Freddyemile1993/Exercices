@@ -51,6 +51,19 @@ function calculer() {
   const initial = `${firstnameAndLastname[0][0]} ${firstnameAndLastname[1][0]}`;
   const decision = `${initial} ${result}`;
   resultElement.textContent = decision;
+
+  // Etape pour faire apparaitre mes initials dans un cercle
+  const abreviation = document.getElementById("initial");
+  abreviation.textContent = initial;
+  const noms = {
+    "+": "la somme de",
+    "-": "la soustraction de",
+    "*": "le produit de",
+    "/": "la division de",
+    "%": "le modulo de",
+  };
+  resultElement.textContent = `${valueName} ${noms[valueOfOperations]} ${firstValue} et de ${secondValue} égale à ${result}`;
+}
   }
 // Code pour surveiller l'action de l'utilisateur
 const btncalculer = document.getElementById("btncalculer");
