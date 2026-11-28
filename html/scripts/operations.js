@@ -45,7 +45,13 @@ function calculer() {
     // la concatenation des chaines de caracteres
   const nameAndResultat = `${valueName} ${result}`;
   resultElement.textContent = nameAndResultat;
-}
+
+   // Etape pour inserer mes initials au niveau du resultat
+  const firstnameAndLastname = valueName.trim().split(" ");
+  const initial = `${firstnameAndLastname[0][0]} ${firstnameAndLastname[1][0]}`;
+  const decision = `${initial} ${result}`;
+  resultElement.textContent = decision;
+  }
 // Code pour surveiller l'action de l'utilisateur
 const btncalculer = document.getElementById("btncalculer");
 btncalculer.addEventListener("click", calculer);
