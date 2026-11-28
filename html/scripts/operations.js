@@ -42,11 +42,11 @@ function calculer() {
   // code pour afficher le resultat de calcul
   resultElement.textContent = "le résultat est " + result;
 
-    // la concatenation des chaines de caracteres
+  // la concatenation des chaines de caracteres
   const nameAndResultat = `${valueName} ${result}`;
   resultElement.textContent = nameAndResultat;
 
-   // Etape pour inserer mes initials au niveau du resultat
+  // Etape pour inserer mes initials au niveau du resultat
   const firstnameAndLastname = valueName.trim().split(" ");
   const initial = `${firstnameAndLastname[0][0]} ${firstnameAndLastname[1][0]}`;
   const decision = `${initial} ${result}`;
@@ -64,7 +64,7 @@ function calculer() {
   };
   resultElement.textContent = `${valueName} ${noms[valueOfOperations]} ${firstValue} et de ${secondValue} égale à ${result}`;
 }
-  }
+
 // Code pour surveiller l'action de l'utilisateur
 const btncalculer = document.getElementById("btncalculer");
 btncalculer.addEventListener("click", calculer);
